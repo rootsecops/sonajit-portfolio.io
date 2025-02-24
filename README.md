@@ -48,8 +48,8 @@ My goal is to advance my skills in cybersecurity by gaining hands-on experience 
 ---
 
 ## **📩 Connect with Me**
-[![Email](https://img.shields.io/badge/Email-rootsecops@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:rootsecops@gmail.com)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sonajit-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sonajit-rabha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
-[![GitHub](https://img.shields.io/badge/GitHub-rootsecops-black?style=for-the-badge&logo=github)](https://github.com/rootsecops)  
+[![Email](https://img.shields.io/badge/Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rootsecops@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sonajit-rabha)  
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rootsecops)  
 
 ---
