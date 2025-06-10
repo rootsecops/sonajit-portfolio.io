@@ -1,143 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-    Under Construction
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif; /* Changed to Inter as per instructions */
-    }
-    h1, h2 {
-      font-family: 'Poppins', sans-serif;
-    }
-    /* Custom styles for the modal/contact section */
-    .contact-modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-    .contact-modal-content {
-        background-color: #fff;
-        padding: 2rem;
-        border-radius: 1rem; /* Rounded corners */
-        text-align: center;
-        position: relative;
-        max-width: 90%;
-        width: 400px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    }
-    .close-button {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: #666;
-    }
-    /* Styling for Font Awesome icons */
-    .contact-icon-fa {
-        font-size: 60px; /* Adjust size as needed, equivalent to 60px height/width */
-        color: #1A2D6E; /* Darker blue for better visibility */
-    }
-    .social-icons-container {
-        display: flex;
-        flex-direction: row; /* Changed to row for horizontal alignment */
-        justify-content: center; /* Center items horizontally */
-        gap: 2rem; /* Space between icons */
-        margin-top: 1.5rem;
-    }
-    .social-icon-link {
-        color: #1A2D6E; /* Darker blue for links */
-        transition: color 0.3s ease;
-        text-decoration: none; /* Remove underline by default */
-    }
-    .social-icon-link:hover {
-        color: #0F1A3B; /* Even darker blue on hover */
-    }
-  </style>
- </head>
- <body class="bg-white">
-  <main class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between min-h-screen">
-    <section class="md:w-1/2 text-left">
-      <h1 class="text-5xl font-extrabold text-[#12194F] leading-tight mb-2">
-        Oops!
-      </h1>
-      <h2 class="text-2xl font-semibold text-[#12194F] mb-4">
-        Under construction
-      </h2>
-      <p class="text-sm text-gray-400 mb-4 max-w-xs">
-        Exciting things are coming! My portfolio is getting a fresh new look and will soon feature new work. Thank you for your understanding while I'm building it, and please check back soon for updates!
-      </p>
-      <p class="text-sm text-gray-400 mb-8 max-w-xs">
-        If you'd like to connect or discuss a project in the meantime, please feel free to reach out using the contact options below.
-      </p>
-      <button id="moreInfoButton" class="bg-[#2B4A9B] text-white text-xs font-semibold px-6 py-2 rounded-full hover:bg-[#1f3570] transition" type="button">
-        MORE INFO
-      </button>
-    </section>
-    <section class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-      <img alt="Illustration of a laptop with yellow and white caution tape, a construction crane holding a yellow warning sign, a person sitting on the laptop with a laptop, and another person walking wearing a yellow helmet with construction cones and a tree in the background" class="w-full max-w-lg rounded-xl" height="400" src="https://storage.googleapis.com/a1aa/image/8254f3ad-e16d-4e39-45a7-f5b12a980a3a.jpg" width="600"/>
-    </section>
-  </main>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>404 page</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Arvo'><link rel="stylesheet" href="./style.css">
 
-  <div id="contactModal" class="contact-modal hidden">
-    <div class="contact-modal-content">
-      <button id="closeModalButton" class="close-button">&times;</button>
-      <h3 class="text-2xl font-semibold text-[#12194F] mb-4">Contact Us</h3>
-      <p class="text-lg text-gray-700 mb-2">For more information, please reach out:</p>
-      <div class="social-icons-container">
-        <a href="mailto:sonajitrabha.business@gmail.com" class="social-icon-link">
-          <i class="fa-solid fa-envelope contact-icon-fa"></i>
-        </a>
-        <a href="https://x.com/RootSecOps?t=efqMguT0l50iPMn_HqGl7g&s=09" target="_blank" rel="noopener noreferrer" class="social-icon-link">
-          <i class="fa-brands fa-twitter contact-icon-fa"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    // Get references to the button and the modal
-    const moreInfoButton = document.getElementById('moreInfoButton');
-    const contactModal = document.getElementById('contactModal');
-    const closeModalButton = document.getElementById('closeModalButton');
-
-    // Function to show the contact modal
-    function showContactModal() {
-      contactModal.classList.remove('hidden');
-    }
-
-    // Function to hide the contact modal
-    function hideContactModal() {
-      contactModal.classList.add('hidden');
-    }
-
-    // Add event listeners
-    moreInfoButton.addEventListener('click', showContactModal);
-    closeModalButton.addEventListener('click', hideContactModal);
-
-    // Hide modal if clicked outside (optional, but good for UX)
-    contactModal.addEventListener('click', (event) => {
-      if (event.target === contactModal) {
-        hideContactModal();
-      }
-    });
-  </script>
- </body>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="page_404">
+	<div class="container">
+		<div class="row">	
+		<div class="col-sm-12 ">
+		<div class="col-sm-10 col-sm-offset-1  text-center">
+		<div class="four_zero_four_bg">
+			<h1 class="text-center ">404</h1>
+		
+		
+		</div>
+		
+		<div class="contant_box_404">
+		<h3 class="h2">
+		Look like you're lost
+		</h3>
+		
+		<p>the page you are looking for not avaible!</p>
+		
+		<a href="" class="link_404">Go to Home</a>
+	</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</section>
+<!-- partial -->
+  
+</body>
 </html>
